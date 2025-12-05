@@ -1,0 +1,97 @@
+baseURL = 'https://infinityay.github.io/InfiniNotes/'
+languageCode = 'zh-cn'
+title = 'InfiniNotes'
+theme = 'PaperMod'
+
+# 启用 emoji 支持
+enableEmoji = true
+
+# 构建配置
+[build]
+  writeStats = true
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  # 环境设置（production 会启用评论等功能）
+  env = "production"
+
+  # 网站描述
+  description = "infinityay 的个人博客"
+  author = "infinityay"
+
+  # 默认主题模式：auto, light, dark
+  defaultTheme = "auto"
+
+  # 显示主题切换按钮
+  ShowThemeToggle = true
+
+  # 显示阅读时间
+  ShowReadingTime = true
+
+  # 显示分享按钮
+  ShowShareButtons = false
+
+  # 显示文章导航（上一篇/下一篇）
+  ShowPostNavLinks = true
+
+  # 显示面包屑导航
+  ShowBreadCrumbs = true
+
+  # 显示代码复制按钮
+  ShowCodeCopyButtons = true
+
+  # 显示字数统计
+  ShowWordCount = true
+
+  # 显示目录
+  ShowToc = true
+  TocOpen = false
+
+  # 首页信息模式
+  [params.homeInfoParams]
+    Title = "Welcome to InfiniNotes"
+    Content = "这里是 infinityay 的个人博客，记录技术学习和生活感悟。"
+
+  # 社交图标
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Infinityay"
+
+# 菜单配置
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 40
+
+# 输出格式配置（用于搜索功能）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 标记语言配置
+[markup]
+  [markup.highlight]
+    # 代码高亮样式
+    style = "monokai"
+    lineNos = true
+    codeFences = true
+    guessSyntax = true
