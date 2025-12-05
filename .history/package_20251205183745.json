@@ -1,0 +1,17 @@
+{
+  "name": "infininotes",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "./node_modules/.bin/hugo --minify",
+    "postinstall": "git submodule update --init",
+    "dev": "hugo server -D",
+    "clean": "rm -rf public",
+    "preview": "hugo server"
+  },
+  "dependencies": {
+    "hugo-extended": "^0.152.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
