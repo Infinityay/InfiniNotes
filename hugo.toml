@@ -13,6 +13,12 @@ enableEmoji = true
 [minify]
   disableXML = true
   minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepEndTags = true
+      keepQuotes = true
+    [minify.tdewolff.js]
+      keepVarNames = true
 
 [params]
   # 环境设置（production 会启用评论等功能）
@@ -85,7 +91,7 @@ enableEmoji = true
 
 # 输出格式配置（用于搜索功能）
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
 
 # 标记语言配置
 [markup]
